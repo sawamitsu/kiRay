@@ -1,0 +1,174 @@
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h2,h3,h5,h6,pre,form,fieldset,button,input,select,textarea,p,blockquote,th,td {font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;}
+
+body {
+line-height: 1.7em;
+color: #595857;
+font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,label {color: #f0908d;}
+
+.pure-button {
+background-color: #f0908d;
+color: white;
+padding: 0.5em 2em;
+border-radius: 5px;
+}
+
+a.pure-button-primary {
+background: white;
+color: #f0908d;
+border-radius: 5px;
+font-size: 120%;
+}
+
+.pure-menu.pure-menu-horizontal>.pure-menu-heading {
+display: inline-block;
+zoom: 1;
+margin: 0 0 -7px 0;
+vertical-align: middle;
+}
+
+a:link {
+text-decoration: none;
+color: #f0908d;
+}
+
+a:visited {
+text-decoration: none;
+color: #f0908d;
+}
+
+a:active {
+text-decoration: none;
+color: #7f8c8d;
+}
+
+a:hover {
+border-bottom-style: dotted;
+border-bottom-color: #f0908d;
+border-bottom-width: 1px;
+color: 68BB00;
+}
+
+.home-menu.pure-menu-open {background: #887f7a;}
+
+.home-menu .active a {color: #f0908d;}
+
+.home-menu a {color: white;}
+
+.home-menu li a:hover,.home-menu li a:focus {
+background: none;
+border: none;
+color: #f0908d;
+}
+
+.splash-container {
+background: #a8bf93;
+z-index: 1;
+overflow: hidden;
+width: 100%;
+height: 88%;
+top: 0;
+left: 0;
+position: fixed !important;
+}
+
+.content-subhead {color: #f0908d;}
+
+.ribbon {
+background: #d6c6af;
+color: #595857;
+}
+
+.footer {
+background-color: #a8bf93;
+color: white;
+font-size: 12px;
+}
+
+img {border-style: none;}
+
+.tp {margin: 0 0 0 30px;}
+
+.dash {
+border-bottom: 3px dashed #f0908d;
+padding: 0 0 17px 0;
+width: 50%;
+margin-left:auto;
+margin-right:auto;
+}
+
+table {width: 100%;}
+
+span.keyword {
+background-color: #9ba8b1;
+color: white;
+padding: 2px;
+}
+
+p.code {
+border-style: dashed;
+padding: 10px;
+}
+
+.width100 {width: 100%;}
+
+.errors {
+color: #f0908d;
+margin-bottom: 40px;
+}
+
+iframe {margin-bottom: 20px;}
+
+html, body {
+margin: 0;
+padding: 0;
+width:100%;
+height:100%;
+}
+
+div#header-fixed {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: auto;
+}
+
+div#header-bk {
+height:auto;
+width:100%;
+}
+
+div#header {
+height: 100%;
+width: 100%;
+margin: auto;
+}
+
+div#footer-fixed {
+position: fixed;
+bottom: 0px;
+left: 0px;
+width: 100%;
+height: auto;
+}
+
+div#footer-bk {
+height:auto;
+width:100%;
+}
+
+div#footer {
+height: 100%;
+width: 100%;
+margin: auto;
+}
+
+div#body-bk {padding:120px 0 105px 0;}
+
+div#body {
+width:100%;
+margin:auto;
+}

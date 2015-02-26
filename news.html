@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<base href="[(site_url)]">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[*pagetitle*]|[(site_name)]</title>
+<meta name="description" content="[*description*]">
+<meta name="keywords" content="[*キーワード*]">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="content/files/css/kiray_color-old-ie.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="content/files/css/marketing.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="content/files/css/kiray_color.css">
+</head>
+
+<body>
+
+<div id="header-fixed"><div id="header-bk"><div id="header"><!-- ヘッダー固定／解除はこの行だけを削除 1 -->
+<div class="home-menu pure-menu pure-menu-open pure-menu-horizontal">
+<a class="pure-menu-heading" href="[~1~]"><img class="pure-img-responsive" alt="[(site_name)]" width="250" src="content/images/modx_japan_logo.png"></a>
+[[Wayfinder?startId=0&level=2]]
+</div>
+</div></div></div><!-- ヘッダー固定／解除はこの行だけを削除 2 -->
+
+<div id="body-bk"><!-- body-bkここから -->
+<div id="body"><!-- bodyここから -->
+
+<div class="contents"><!-- contentsここから -->
+
+<nav class="tp">
+[[TopicPath]]
+</nav>
+
+<h2 class="content-head is-center dash">[*pagetitle*]</h2>
+
+<div class="pure-g"><!-- pure-gここから -->
+<div class="l-box-lrg pure-u-1"><!-- u-1ここから -->
+
+<table class="pure-table pure-table-bordered">
+[[Ditto?
+  &orderBy = createdon DESC
+  &tpl = '@CODE:
+    <tr>
+    <td class="date">[+createdon:date=`%Y年%-m月%-d日`+]</td>
+    <td><span class="keyword">[+キーワード+]</span>
+    <a href="[~[+id+]~]">[+title+]</a></td>
+    </tr>
+' // 表示パターン
+]]
+</table>
+
+</div><!-- u-1ここまで -->
+</div><!-- pure-gここまで -->
+
+</div><!-- contentsここまで -->
+
+</div><!-- bodyここまで -->
+</div><!-- body-bkここまで -->
+
+<div id="footer-fixed"><div id="footer-bk"><div id="footer"><!-- フッター固定／解除はこの行だけを削除 1 -->
+<div class="footer l-box is-center">
+<p>&copy; 2015 [(site_name)] All Rights Reserved.</p>
+<p>Mem: [^m^], SQL: [^qt^], [^q^] request(s), PHP: [^p^], total: [^t^], include [^f^]files, page retrieved from [^s^].</p>
+</div>
+</div></div></div><!-- フッター固定／解除はこの行だけを削除 2 -->
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<base href="[(site_url)]">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[*pagetitle*]|[(site_name)]</title>
+<meta name="description" content="[*description*]">
+<meta name="keywords" content="[*キーワード*]">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="content/files/css/kiray_color-old-ie.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="content/files/css/marketing.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="content/files/css/kiray_color.css">
+</head>
+
+<body>
+
+<div id="header-fixed"><div id="header-bk"><div id="header"><!-- ヘッダー固定／解除はこの行だけを削除 1 -->
+<div class="home-menu pure-menu pure-menu-open pure-menu-horizontal">
+<a class="pure-menu-heading" href="[~1~]"><img class="pure-img-responsive" alt="[(site_name)]" width="250" src="content/images/modx_japan_logo.png"></a>
+[[Wayfinder?startId=0&level=2]]
+</div>
+</div></div></div><!-- ヘッダー固定／解除はこの行だけを削除 2 -->
+
+<div id="body-bk"><!-- body-bkここから -->
+<div id="body"><!-- bodyここから -->
+
+<div class="contents"><!-- contentsここから -->
+
+<nav class="tp">
+[[TopicPath]]
+</nav>
+
+<h2 class="content-head is-center dash">[*pagetitle*]</h2>
+
+<div class="pure-g"><!-- pure-gここから -->
+
+<div class="l-box-lrg pure-u-1 pure-u-md-5-8"><!-- 5-8ここから -->
+
+<h3 class="content-head">管理画面からコンテンツ管理</h3>
+<p>管理画面では、コンテンツを新規追加したり、テンプレートを調整したり、ウェブサイトを構成する各種パーツの管理が簡単にできます。ユーザグループごとに、管理画面の操作権限を設定することもできます。また、モジュールを追加して、他のデータセットと連動したり、管理業務を簡易化することも可能です。</p>
+
+<h3 class="content-head">ウェブページ側からコンテンツ管理</h3>
+<p>QuickManager（クイックマネージャー）を使えば、サイトをブラウザーで見ながら、ページの内容を編集できます。管理画面を経由せず、ほとんどのコンテンツ要素とテンプレート変数を手軽に編集できます。</p>
+
+<h3 class="content-head">テンプレート変数はデータバインディングが可能</h3>
+<p>「テンプレート変数」は、高機能なカスタムフィールドです。単なるテキストの入力 項目ではなく、プログラムと連動した高度なコントロールが可能です。ここでは、コードの実行結果やデータソースによって異なる情報を返す特殊な例をご紹介 します。ここではログインメニューを「@バインディング」で実現する例を示します。</p>
+
+<p class="code"><code>@EVAL if ($modx-&gt;getLoginUserID()) return 'ログアウト'; else return 'ログイン';</code></p>
+<p>上記のような記述をフィールドに追加するとログイン状態に従ってメニューの表示内容を変化させることができます。</p>
+
+</div><!-- 5-8ここまで -->
+
+<div class="l-box-lrg pure-u-1 pure-u-md-3-8"><!-- 3-8ここから -->
+[[Wayfinder?
+&outerTpl='@CODE:<ul>[+wf.wrapper+]</ul>'
+&level=1
+&startId=index.html // index.html index INDEX など先頭がiで指定
+]]
+</div><!-- 3-8ここまで -->
+
+</div><!-- pure-gここまで -->
+
+</div><!-- contentsここまで -->
+
+</div><!-- bodyここまで -->
+</div><!-- body-bkここまで -->
+
+<div id="footer-fixed"><div id="footer-bk"><div id="footer"><!-- フッター固定／解除はこの行だけを削除 1 -->
+<div class="footer l-box is-center">
+<p>&copy; 2015 [(site_name)] All Rights Reserved.</p>
+<p>Mem: [^m^], SQL: [^qt^], [^q^] request(s), PHP: [^p^], total: [^t^], include [^f^]files, page retrieved from [^s^].</p>
+</div>
+</div></div></div><!-- フッター固定／解除はこの行だけを削除 2 -->
+
+</body>
+</html>
